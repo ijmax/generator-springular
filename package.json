@@ -1,0 +1,43 @@
+{
+  "name": "generator-springular",
+  "version": "0.0.1",
+  "description": "Yeoman Generator for Enterprise Angular and Spring boot projects.",
+  "keywords": [
+    "yeoman-generator",
+    "angular",
+    "polymer"
+  ],
+  "homepage": "https://github.com/hrandika/generator-springular",
+  "bugs": "https://github.com/hrandika/generator-springular/issues",
+  "author": {
+    "name": "Randika Hapugoda",
+    "email": "hrandika@hotmail.com",
+    "url": "hrandika.blogspot.com"
+  },
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrandika/generator-springular.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "underscore": "~1.5",
+    "underscore.string": "~2.3",
+    "yeoman-generator": "~0.16",
+    "chalk": "~0.4.0",
+    "ng-parse-module": "~0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.10.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="<%= _.camelize(appname) %>">
+
+<head>
+    <title>Springular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">    
+    <script src="bower_components/webcomponentsjs/webcomponents.js" data-concat="false"></script>
+    <link rel="import" href="elements.html" data-concat="false">
+    <link href="app.less" type="text/css" rel="stylesheet/less">
+</head>
+
+<body fullbleed>
+
+     <paper-dialog ng-opened="dialog" transition="core-transition-center" heading="Springular" layered backdrop>
+        <span>Version 0.0.0 </span>
+    </paper-dialog>
+
+    <core-toolbar>
+        <paper-icon-button src="img/logo.png" ng-click="dialog=true"></paper-icon-button>
+        <div flex></div>
+        <div class="middle indent">Springular</div>
+        <paper-progress class="bottom fit" indeterminate="false"></paper-progress>
+    </core-toolbar>
+
+    <paper-shadow class="container">
+        <div ui-view>
+        </div>
+    </paper-shadow>
+
+    <!-- Livereload script for development only (stripped during dist build) -->
+    <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+
+    <!-- JS from Bower Components -->
+    <script src="bower_components/less/dist/less.js" data-concat="false"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/lodash/dist/lodash.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
+    <script src="bower_components/ng-polymer-elements/ng-polymer-elements.js"></script>
+    <!-- Add New Bower Component JS Above -->
+
+    <!-- Main App JS -->
+    <script src="app.js"></script>
+    <!-- Add New Component JS Above -->
+
+</body>
+
+</html>
