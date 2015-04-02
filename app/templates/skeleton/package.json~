@@ -4,7 +4,6 @@
   "devDependencies": {
     "grunt": "~0.4",
     "grunt-angular-templates": "~0.5",
-    "grunt-connect-proxy": "^0.1.11",
     "grunt-browser-output": "0.1.0",
     "grunt-contrib-clean": "~0.5",
     "grunt-contrib-concat": "~0.3",
